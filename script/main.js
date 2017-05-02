@@ -24,6 +24,7 @@
             $("#video").css('top', h3);
             var h4 = ($("#video_shot").height()).toString() + 'px';
             $("#video_wrap").css('height', h4);
+            $("#img_wrap").css('height', h4);
             var h5 = ($("#float1").height() + $("#video_shot").height()*1.3).toString() + 'px';
             $("#challenge").css('top', h5);
             $("#isola2").height($("#isola2").width()*1.2);
@@ -69,7 +70,31 @@
 			$('#bird').css('background-image','url("./img/bird7.png")')
 		}
 	}
+    var j=0;
+    function change_img(){
+        if (j<3){
+            j++;
+        }else if(j==3){
+            j=0;
+        }
+        if(j==0){
+           $('#img1').fadeIn(1000);
+           $('#img4').fadeOut(1000);
+        }else if(j==1){
+           $('#img2').fadeIn(1000);
+           $('#img1').fadeOut(1000);
+        }else if(j==2){
+           $('#img3').fadeIn(1000);
+           $('#img2').fadeOut(1000);
+        }else if(j==3){
+           $('#img4').fadeIn(1000);
+           $('#img3').fadeOut(1000);
+        }
+
+
+    }
 
 	var myVar = setInterval(bird_anim, 100);
+    var myVar1 = setInterval(change_img, 4000);
 
 })();
