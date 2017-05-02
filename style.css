@@ -121,6 +121,13 @@ span{
 	z-index:99;
 }
 
+iframe {
+	width:96%;
+	right:2%;
+	position: absolute;
+	display: none;
+}
+
 #bird{
 	position: absolute;
 	top:50%;
@@ -130,22 +137,13 @@ span{
 	background-image: url("./img/bird1.png");
 }
 
-#video_cast{
-	position: absolute;
-	width:96%;
-	/******** height delete *********/
-	height:500px;
-	right:2%;
-	background-color: #fff;
-}
-
 #play-button{
 	background: url(./img/play.png);
     width: 174px;
     height: 101px;
     position: absolute;
     left: calc(50% - 87px);
-    top: calc(50% - 50px);
+    top: 210px;
     z-index: 999;
     transition: all .3s ease-in-out;
     cursor:pointer;

@@ -31,6 +31,15 @@
             var h6 = ($("#float1").height() + $("#video_shot").height()*1.3 + $("#challenge").height() + 100).toString() + 'px';
             $("#scenario").css('top', h6);
             $("#scenario").height($("#isola2").width()*3);
+            $("iframe").height($("iframe").width()*1004/1700);
+            $("#play-button").click(function(){
+                $("#play-button").hide();
+                $("#video_shot").hide();
+                $('iframe').show();
+                $('iframe').attr("src", "https://player.vimeo.com/video/215600881?autoplay=1&title=0&byline=0&portrait=0");
+            })
+            var h7= ($("#video_shot").height()/2-50).toString() + 'px';
+            $("#play-button").css('top',h7);
         }
         window.onload = function() {
             window.onresize = adjust;
