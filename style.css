@@ -537,7 +537,7 @@ iframe {
 	top:75%;
 }
 
-#img_wrap{
+#imgwrap{
 	position: absolute;
 	width:64%;
 	top:73%;
@@ -546,7 +546,7 @@ iframe {
 	background-color: #fff;
 }
 
-.img_shot{
+.imgshot{
 	position: absolute;
 	width:96%;
 	right:2%;

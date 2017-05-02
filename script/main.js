@@ -24,7 +24,7 @@
             $("#video").css('top', h3);
             var h4 = ($("#video_shot").height()).toString() + 'px';
             $("#video_wrap").css('height', h4);
-            $("#img_wrap").css('height', h4);
+            $("#imgwrap").css('height', h4);
             var h5 = ($("#float1").height() + $("#video_shot").height()*1.3).toString() + 'px';
             $("#challenge").css('top', h5);
             $("#isola2").height($("#isola2").width()*1.2);
